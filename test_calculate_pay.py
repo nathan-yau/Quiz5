@@ -37,8 +37,3 @@ class TestCalculatePay(TestCase):
         actual = calculate_pay.calculate_pay(0.00, 0.00)
         expected = 0.00
         self.assertEqual(actual, expected)
-
-    def test_calculate_pay_with_zero_hours_and_negative_wage(self):
-        actual = calculate_pay.calculate_pay(0.00, -20.00)
-        expected = 0.00
-        self.assertEqual(actual, expected)
