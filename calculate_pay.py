@@ -27,8 +27,7 @@ def calculate_pay(hours, wage):
 
 
 def main():
-    result = calculate_pay(40, 20)
-    print(result)
+    print("Hi Chris, this is our work.")
 
 
 if __name__ == "__main__":
