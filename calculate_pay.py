@@ -2,8 +2,8 @@ def calculate_pay(hours, wage):
     """
     Calculate the employee's weekly salary
 
-    :param hours: floating point number in two decimal
-    :param wage: floating point number in two decimal
+    :param hours: floating point number or an integer
+    :param wage: floating point number or an integer
     :precondition: hours must be a float point number or an integer
     :precondition: wage must be a float point number or an integer
     :postcondition: calculate the weekly pay
