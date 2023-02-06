@@ -1,14 +1,17 @@
 def calculate_pay(hours, wage):
     if hours > 40:
-        product = wage * 40
-        product += 2 * (wage * (hours - 40))
+        weekly_pay = wage * 40
+        weekly_pay += 2 * (wage * (hours - 40))
     else:
-        product = hours * wage
-    return max(product, 0)
+        weekly_pay = hours * wage
+    if hours < 0 or wage < 0:
+        weekly_pay = 0
+
+    return weekly_pay
 
 
 def main():
-    result = calculate_pay(50, 20)
+    result = calculate_pay(40, 20)
     print(result)
 
 
